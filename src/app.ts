@@ -4,7 +4,7 @@ import * as devel from './devel'
 const app = express()
 
 // static assets
-app.use('/sso', express.static(`${__dirname}/../public`))
+app.use('/', express.static(`${__dirname}/../public`))
 
 // accept json requests
 app.use(express.json())
